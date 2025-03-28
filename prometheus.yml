@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 5s
+  external_labels:
+    monitor: 'node'
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['172.16.150.116:9090']
+
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['172.16.150.116:9100']
